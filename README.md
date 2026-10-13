@@ -1,36 +1,51 @@
 # SCC0220 - Laboratório de Introdução à Ciência da Computação II
-A proposta da disciplina é a implementação de algoritmos variados e a comparação entre eles para cálculo de maior eficiência.
-- Todos os trabalhos possuem um relatório detalhando o processo de construção dos códigos e métodos de avaliação. Abaixo está um resumo de cada trabalho.
 
-## Trabalho 1 - Multiplicação
-> Faça duas implementações, uma utilizando a multiplicação convencional e outra utilizando o algoritmo de Karatsuba. Na conclusão lembre-se que o método convencional é $O(n^{2})$ e o algoritmo de Karatsuba $O(n^{log_23}) \approx O(n^{1.58}).$
+Trabalhos da disciplina **SCC0220 - Laboratório de Introdução à Ciência da Computação II**, que propõe implementar algoritmos variados e comparar sua eficiência.
 
-## Trabalho 2 - Exponenciação
-> Implemente a exponenciação de duas formas: uma iterativa $O(n)$ e outra utilizando o método de divisão e conquista (exponenciação rápida) $O(\log n)$.
+<p align="center">
+  <img alt="Disciplina" src="https://img.shields.io/badge/SCC0220-Laborat%C3%B3rio%20de%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%20II-blue?style=for-the-badge">
+  <img alt="Instituição" src="https://img.shields.io/badge/USP-Universidade%20de%20S%C3%A3o%20Paulo-orange?style=for-the-badge">
+</p>
 
-## Trabalho 3 - Seleção
-> Implemente o algoritmo de ordenação por seleção $O(n^{2})$ e Shell Sort $O(n^{3/2})$ no registro de jogador. Utilize um TAD de pilha para a implementação do algoritmo de ordenação por seleção. Ordenar no formato nome nota `nome nota`, onde nome é uma string de no máximo 50 caracteres e nota um inteiro entre 0 e 120. Se houver dois jogadores com a mesma nota, utilize a ordem lexicográfica de seus nomes como critério de desempate.
+> **Disciplina:** SCC0220 - Laboratório de Introdução à Ciência da Computação II <br>
+> **Instituição:** USP - Universidade de São Paulo
 
-## Trabalho 4 - Notáveis
-> Leia um arquivo planilha .csv das notas de uma turma de alunos e imprima os `k` alunos com maior aumento de nota.
+<p align="center">
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+</p>
 
-## Trabalho 5 - Bubble and Quick
-> Implemente o BubbleSort $O(n^{2})$ e o QuickSort $O(n log n)$ para ordenar pratos de um restaurante a partir de tempo e prioridade.
+## Requisitos
 
-## Trabalho 6 - A outra pilha
-> Implemente o MergeSort $O(n log n)$ e o HeapSort $O(n log n)$ para ordenar pratos de um restaurante a partir de tempo e prioridade.
+- Compilador **C** (por exemplo, `gcc`)
 
-## Trabalho 7 - A outra pilha
-> Implete o RadixSort $O(n)$, nesse caso, e o StoogeSort $O(n^{2.7})$ para ordenar cartas de baralho.
+## Como Executar
 
-## Trabalho 8 - Buscando problemas
-> Implemente a busca binária $O(log n)$ para buscar cartas danificadas em um baralho e compare com a busca sequencial $O(n)$.
+Compile os fontes da pasta do trabalho desejado:
 
-## Trabalho 9 - O melhor caminho
-> Implemente a árvore binária de busca e compare sua eficiência de busca $O(log n)$ com uma busca linear, como a busca em profundidade ou a busca em largura $O(n)$.
+```bash
+gcc Aula02_Exponenciacao/*.c -o programa
+```
 
-## Trabalho 10 - MSC
-> Implemente o algoritmo de Máxima Subsequência Consecutiva, uma implementação utilizando HashMap e outra usando ordenação.
+Os casos de teste de cada trabalho ficam na pasta correspondente (`casoteste`, `casos_run` etc.).
 
-## Trabalho 11 - Tour
-> Simule um grafo e percorra com determinado número de passos.
+## Estrutura do Projeto
+
+- `/Aula01_Karatsuba` a `/Aula10_MSC`: um trabalho por pasta, com código e casos de teste.
+- `/CodigosBase`: códigos base de apoio.
+- `/TimeTest`: testes de tempo.
+
+Todos os trabalhos possuem um relatório detalhando o processo de construção dos códigos e os métodos de avaliação.
+
+## Trabalhos
+
+1. **Multiplicação:** multiplicação convencional $O(n^{2})$ e algoritmo de Karatsuba $O(n^{\log_2 3}) \approx O(n^{1.58})$.
+2. **Exponenciação:** iterativa $O(n)$ e por divisão e conquista (exponenciação rápida) $O(\log n)$.
+3. **Seleção:** ordenação por seleção $O(n^{2})$ (com TAD de pilha) e Shell Sort $O(n^{3/2})$ sobre registros de jogador (`nome nota`), com desempate lexicográfico.
+4. **Notáveis:** lê uma planilha `.csv` de notas e imprime os `k` alunos com maior aumento de nota.
+5. **Bubble and Quick:** BubbleSort $O(n^{2})$ e QuickSort $O(n \log n)$ para ordenar pratos por tempo e prioridade.
+6. **A outra pilha:** MergeSort $O(n \log n)$ e HeapSort $O(n \log n)$ para ordenar pratos por tempo e prioridade.
+7. **A outra pilha:** RadixSort $O(n)$ e StoogeSort $O(n^{2.7})$ para ordenar cartas de baralho.
+8. **Buscando problemas:** busca binária $O(\log n)$ para achar cartas danificadas, comparada à busca sequencial $O(n)$.
+9. **O melhor caminho:** árvore binária de busca $O(\log n)$ comparada a uma busca linear (DFS ou BFS) $O(n)$.
+10. **MSC:** Máxima Subsequência Consecutiva, com HashMap e com ordenação.
+11. **Tour:** simula um grafo e o percorre por um número de passos.
