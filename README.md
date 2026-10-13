@@ -12,11 +12,18 @@ Trabalhos da disciplina **SCC0220 - Laboratório de Introdução à Ciência da 
 
 <p align="center">
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+  <img src="https://img.shields.io/badge/Make-6D00CC?style=for-the-badge&logo=gnu&logoColor=white" alt="Make" />
+  <img src="https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib" />
 </p>
 
 ## Requisitos
 
-- Compilador **C** (por exemplo, `gcc`)
+- Compilador **C** (por exemplo, `gcc`) e **Make**
+- **Bash** para os scripts de automação
+- **Python 3** com `numpy` e `matplotlib` para os gráficos de tempo (`TimeTest/grafico.py`)
 
 ## Como Executar
 
@@ -32,9 +39,9 @@ Os casos de teste de cada trabalho ficam na pasta correspondente (`casoteste`, `
 
 - `/Aula01_Karatsuba` a `/Aula10_MSC`: um trabalho por pasta, com código e casos de teste.
 - `/CodigosBase`: códigos base de apoio.
-- `/TimeTest`: testes de tempo.
+- `/TimeTest`: medição de tempo: `juiz.py` e `juiza2.sh` (execução dos programas), `grafico.py` (gráficos, com `numpy` e `matplotlib`) e os resultados por aula.
 
-Todos os trabalhos possuem um relatório detalhando o processo de construção dos códigos e os métodos de avaliação.
+Todos os trabalhos possuem um relatório (`Relatório - Aula N.docx`) detalhando o processo de construção dos códigos e os métodos de avaliação. Várias pastas trazem `Makefile` e scripts de automação (`CasaAutomatica.sh`, entre outros) que rodam os casos e geram os tempos e gráficos.
 
 ## Trabalhos
 
